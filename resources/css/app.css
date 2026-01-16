@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/* ==================================================
+   BASE TYPOGRAPHY – SEGEO UI (SYSTEM FONT)
+================================================== */
+html,
+body {
+    font-family: "Segoe UI", "Segoe UI Variable", -apple-system,
+        BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif !important;
+}
+html { scroll-behavior: smooth; }
+
+
+/* Header & Navigation */
+header,
+nav,
+.nav-link,
+.mobile-link {
+    font-family: "Segoe UI", "Segoe UI Variable", -apple-system,
+        BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.02em;
+}
+
+.control-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 9999px;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.control-btn:hover {
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.control-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: white;
+    stroke-width: 1.6;
+}
+
+/* ✅ Mac OS only */
+@supports (-webkit-touch-callout: none) {
+    @media screen and (min-width: 1280px) and (max-width: 1440px) {
+        a#mac-fix {
+            margin-left: 100px;
+            display: block;
+        }
+    }
+}
+
+.service-link {
+        color: #000;
+        transition: color 0.25s ease;
+    }
+    .service-link:hover,
+    .service-link:focus,
+    .service-link:active {
+        color: #f38121;
+    }
